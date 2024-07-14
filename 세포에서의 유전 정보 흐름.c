@@ -7,8 +7,8 @@ int main() {
     int i;
     char amy[3];
 
-    printf("[ ¼¼Æ÷¿¡¼­ÀÇ À¯Àü Á¤º¸ Èå¸§À» ¾Ë¾Æº¾½Ã´ç >< ]\n");
-    printf("\nDNA(ÁÖÇü°¡´Ú)ÀÇ À¯Àü Á¤º¸¸¦ ÀÔ·ÂÇØ ÁÖ¼¼¿ä : ");
+    printf("[ ì„¸í¬ì—ì„œì˜ ìœ ì „ ì •ë³´ íë¦„ì„ ì•Œì•„ë´…ì‹œë‹¹ >< ]\n");
+    printf("\nDNA(ì£¼í˜•ê°€ë‹¥)ì˜ ìœ ì „ ì •ë³´ë¥¼ ìž…ë ¥í•´ ì£¼ì„¸ìš”(ëŒ€ì†Œë¬¸ìž ë¬´ê´€) : ");
     scanf("%s", DNA);
 
     for (int i = 0; i < strlen(DNA); i++) {
@@ -27,9 +27,9 @@ int main() {
     }
     RNA[strlen(DNA)] = '\0';
 
-    printf("\nÀü»ç °á°ú : %s\n", RNA);
+    printf("\nì „ì‚¬ ê²°ê³¼ : %s\n", RNA);
 
-    printf("\n¹ø¿ª °á°ú : ");
+    printf("\në²ˆì—­ ê²°ê³¼ : ");
 
     for (int i = 0; i < strlen(RNA); i += 3) {
         if (i + 2 < strlen(RNA)) { 
@@ -38,67 +38,67 @@ int main() {
             amy[2] = RNA[i + 2];
 
             if ((amy[0] == 'U') && (amy[1] == 'U') && (amy[2] == 'U') || (amy[0] == 'U') && (amy[1] == 'U') && (amy[2] == 'C')) {
-                printf("Æä´Ò¾Ë¶ó´Ñ   ");
+                printf("íŽ˜ë‹ì•Œë¼ë‹Œ   ");
             }
             else if ((amy[0] == 'U') && (amy[1] == 'U') && (amy[2] == 'A') || (amy[0] == 'U') && (amy[1] == 'U') && (amy[2] == 'G') || (amy[0] == 'C') && (amy[1] == 'U') && (amy[2] == 'U') || (amy[0] == 'C') && (amy[1] == 'U') && (amy[2] == 'C') || (amy[0] == 'C') && (amy[1] == 'U') && (amy[2] == 'A') || (amy[0] == 'C') && (amy[1] == 'U') && (amy[2] == 'G')) {
-                printf("·ù½Å   ");
+                printf("ë¥˜ì‹    ");
             }
             else if ((amy[0] == 'A') && (amy[1] == 'U') && (amy[2] == 'U') || (amy[0] == 'A') && (amy[1] == 'U') && (amy[2] == 'C') || (amy[0] == 'A') && (amy[1] == 'U') && (amy[2] == 'A')) {
-                printf("¾ÆÀÌ¼Ò·ù½Å   ");
+                printf("ì•„ì´ì†Œë¥˜ì‹    ");
             }
             else if ((amy[0] == 'A') && (amy[1] == 'U') && (amy[2] == 'G')) {
-                printf("¸Þ½ÎÀÌ¿À´Ñ(½ÃÀÛÄÚµ·)   ");
+                printf("ë©”ì‹¸ì´ì˜¤ë‹Œ(ì‹œìž‘ì½”ëˆ)   ");
             }
             else if ((amy[0] == 'G') && (amy[1] == 'U') && (amy[2] == 'U') || (amy[0] == 'G') && (amy[1] == 'U') && (amy[2] == 'C') || (amy[0] == 'G') && (amy[1] == 'U') && (amy[2] == 'A') || (amy[0] == 'G') && (amy[1] == 'U') && (amy[2] == 'G')) {
-                printf("¹ß¸°   ");
+                printf("ë°œë¦°   ");
             }
             else if ((amy[0] == 'U') && (amy[1] == 'C') && (amy[2] == 'U') || (amy[0] == 'U') && (amy[1] == 'C') && (amy[2] == 'C') || (amy[0] == 'U') && (amy[1] == 'C') && (amy[2] == 'A') || (amy[0] == 'U') && (amy[1] == 'C') && (amy[2] == 'G') || (amy[0] == 'A') && (amy[1] == 'G') && (amy[2] == 'U') || (amy[0] == 'A') && (amy[1] == 'G') && (amy[2] == 'C')) {
-                printf("¼¼¸°   ");
+                printf("ì„¸ë¦°   ");
             }
             else if ((amy[0] == 'C') && (amy[1] == 'C') && (amy[2] == 'U') || (amy[0] == 'C') && (amy[1] == 'C') && (amy[2] == 'C') || (amy[0] == 'C') && (amy[1] == 'C') && (amy[2] == 'A') || (amy[0] == 'C') && (amy[1] == 'C') && (amy[2] == 'G')) {
-                printf("ÇÁ·Ñ¸°   ");
+                printf("í”„ë¡¤ë¦°   ");
             }
             else if ((amy[0] == 'A') && (amy[1] == 'C') && (amy[2] == 'U') || (amy[0] == 'A') && (amy[1] == 'C') && (amy[2] == 'C') || (amy[0] == 'A') && (amy[1] == 'C') && (amy[2] == 'A') || (amy[0] == 'A') && (amy[1] == 'C') && (amy[2] == 'G')) {
-                printf("Æ®·¹¿À´Ñ   ");
+                printf("íŠ¸ë ˆì˜¤ë‹Œ   ");
             }
             else if ((amy[0] == 'G') && (amy[1] == 'C') && (amy[2] == 'U') || (amy[0] == 'G') && (amy[1] == 'C') && (amy[2] == 'C') || (amy[0] == 'G') && (amy[1] == 'C') && (amy[2] == 'A') || (amy[0] == 'G') && (amy[1] == 'C') && (amy[2] == 'G')) {
-                printf("¾Ë¶ó´Ñ   ");
+                printf("ì•Œë¼ë‹Œ   ");
             }
             else if ((amy[0] == 'U') && (amy[1] == 'A') && (amy[2] == 'U') || (amy[0] == 'U') && (amy[1] == 'A') && (amy[2] == 'C')) {
-                printf("Å¸ÀÌ·Î½Å   ");
+                printf("íƒ€ì´ë¡œì‹    ");
             }
             else if ((amy[0] == 'U') && (amy[1] == 'A') && (amy[2] == 'A') || (amy[0] == 'U') && (amy[1] == 'A') && (amy[2] == 'G') || (amy[0] == 'U') && (amy[1] == 'G') && (amy[2] == 'A')) {
-                printf("Á¾°á ÄÚµ·   ");
+                printf("ì¢…ê²° ì½”ëˆ   ");
             }
             else if ((amy[0] == 'C') && (amy[1] == 'A') && (amy[2] == 'U') || (amy[0] == 'C') && (amy[1] == 'A') && (amy[2] == 'C')) {
-                printf("È÷½ºÆ¼µò   ");
+                printf("ížˆìŠ¤í‹°ë”˜   ");
             }
             else if ((amy[0] == 'C') && (amy[1] == 'A') && (amy[2] == 'A') || (amy[0] == 'C') && (amy[1] == 'A') && (amy[2] == 'G')) {
-                printf("±Û·çÅ¸¹Î");
+                printf("ê¸€ë£¨íƒ€ë¯¼");
             }
             else if ((amy[0] == 'A') && (amy[1] == 'A') && (amy[2] == 'U') || (amy[0] == 'A') && (amy[1] == 'A') && (amy[2] == 'C')) {
-                printf("¾Æ½ºÆÄ¶ó±ä   ");
+                printf("ì•„ìŠ¤íŒŒë¼ê¸´   ");
             }
             else if ((amy[0] == 'A') && (amy[1] == 'A') && (amy[2] == 'A') || (amy[0] == 'A') && (amy[1] == 'A') && (amy[2] == 'G')) {
-                printf("¶óÀÌ½Å   ");
+                printf("ë¼ì´ì‹    ");
             }
             else if ((amy[0] == 'G') && (amy[1] == 'A') && (amy[2] == 'U') || (amy[0] == 'G') && (amy[1] == 'A') && (amy[2] == 'C')) {
-                printf("¾Æ½ºÆÄÆ®»ê   ");
+                printf("ì•„ìŠ¤íŒŒíŠ¸ì‚°   ");
             }
             else if ((amy[0] == 'G') && (amy[1] == 'A') && (amy[2] == 'A') || (amy[0] == 'G') && (amy[1] == 'A') && (amy[2] == 'G')) {
-                printf("±Û·çÅ½»ê   ");
+                printf("ê¸€ë£¨íƒì‚°   ");
             }
             else if ((amy[0] == 'U') && (amy[1] == 'G') && (amy[2] == 'U') || (amy[0] == 'U') && (amy[1] == 'G') && (amy[2] == 'C')) {
-                printf("½Ã½ºÅ×ÀÎ   ");
+                printf("ì‹œìŠ¤í…Œì¸   ");
             }
             else if ((amy[0] == 'C') && (amy[1] == 'G') && (amy[2] == 'U') || (amy[0] == 'C') && (amy[1] == 'G') && (amy[2] == 'C') || (amy[0] == 'C') && (amy[1] == 'G') && (amy[2] == 'A') || (amy[0] == 'C') && (amy[1] == 'G') && (amy[2] == 'G') || (amy[0] == 'A') && (amy[1] == 'G') && (amy[2] == 'A') || (amy[0] == 'A') && (amy[1] == 'G') && (amy[2] == 'G')) {
-                printf("¾Æ¸£Áö´Ñ   ");
+                printf("ì•„ë¥´ì§€ë‹Œ   ");
             }
             else if ((amy[0] == 'U') && (amy[1] == 'G') && (amy[2] == 'G')) {
-                printf("Æ®¸³ÅäÆÇ   ");
+                printf("íŠ¸ë¦½í† íŒ   ");
             }
             else {
-                printf("±Û¶óÀÌ½Å   ");
+                printf("ê¸€ë¼ì´ì‹    ");
             }
         }
     }
